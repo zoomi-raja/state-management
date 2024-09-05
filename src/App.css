@@ -13,6 +13,9 @@
   font-weight: 700;
   background-color: #2d3646;
 }
+.header span{
+  color: #ccc459;
+}
 .main-section{
   height: 20vh;
   display: flex;

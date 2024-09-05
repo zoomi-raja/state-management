@@ -1,5 +1,5 @@
-export default function Header(){
+export default function Header({ login = false }){
     return <header className="header">
-        <span>[State drilling] Click on Login Button to change State</span>
+        <p>[ <span>State drilling</span> ] Click on { !login ? 'Login' : 'Logout'} Button to change State</p>
     </header>
 }

@@ -1,4 +1,4 @@
-const makeAuthApi = (forectReject = false) => {
+const dummyFetch = (forectReject = false) => {
     return new Promise( (resolve, reject) => {
         setTimeout(() => {
             if(forectReject){
@@ -8,4 +8,4 @@ const makeAuthApi = (forectReject = false) => {
         },3000);
     } );
 }
-export {makeAuthApi};
+export {dummyFetch};
