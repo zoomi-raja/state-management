@@ -1,5 +1,4 @@
 export default function functionauthReducer (state, action){
-    console.log(state, action)
     switch (action.type){
         case "PERFORM_LOGIN":
             state = {

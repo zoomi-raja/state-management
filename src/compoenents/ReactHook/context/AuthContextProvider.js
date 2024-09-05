@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 import authReducer from "./authReducer";
-import { dummyFetch } from "../../../utility/fetch";
+import { loginAction } from "./AuthActions";
 
 export const appContext = createContext({
     login: false,
@@ -13,13 +13,8 @@ export default function AuthContextProvider({children}){
         login: false
     });
     const handleLogin = async () => {
-        const result = await dummyFetch();
-        if(result.auth){
-            authDispatch({
-                type: 'PERFORM_LOGIN',
-                login: true
-            });
-        }
+        //used thunk logic to refactor
+        await loginAction(authDispatch);
 
     }
     const handleLogout = () => {
