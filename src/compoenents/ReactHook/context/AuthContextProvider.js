@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 import authReducer from "./authReducer";
-import { loginAction } from "./AuthActions";
+import { loginAction, PERFORM_LOGOUT } from "./AuthActions";
 
 export const appContext = createContext({
     login: false,
@@ -19,7 +19,7 @@ export default function AuthContextProvider({children}){
     }
     const handleLogout = () => {
         authDispatch({
-            type: 'PERFORM_LOGOUT',
+            type: PERFORM_LOGOUT,
             login: false
         });
     }
