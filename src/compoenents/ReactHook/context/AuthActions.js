@@ -16,3 +16,10 @@ export const loginAction = async (dispatch) => {
         console.error('Login failed:', error);
     }
 }
+
+export const logoutAction = (dispatch) => {
+    dispatch({
+        type: PERFORM_LOGOUT,
+        login: false
+    });
+}
