@@ -1,4 +1,4 @@
-export default function functionauthReducer (state, action){
+export default function authReducer (state, action){
     switch (action.type){
         case "PERFORM_LOGIN":
             state = {

@@ -14,3 +14,19 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 T
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+
+/react-state-management/
+├── simple components (WithStateDrilling)/
+│   ├── Body.jsx
+│   ├── Header.jsx
+│   └── WithStateDrilling.jsx
+├── medium-project (ReactHook)/
+│   ├── Body.jsx
+│   ├── Header.jsx
+│   └── ReactHook.jsx
+├── large-project (Redux)/
+│   ├── Body.jsx
+│   ├── Header.jsx
+│   └── Redux.jsx
+└── README.md (main README with an overview)

@@ -8,7 +8,6 @@ export default function Body({onClick, login}){
       await onClick();
     } catch (error) {
       console.error('An error occurred:', error);
-      // Optionally, you could set some error state here
     } finally {
       setLoading(false);
     }
