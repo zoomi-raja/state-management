@@ -13,7 +13,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 `
 Scenario 1: Small Project - Simple use of useState for a few components.
+
 Scenario 2: Medium Project - Using useContext with useReducer for a global state.
+
 Scenario 3: Large Project - Using Redux or Redux Toolkit for asynchronous data flow, with examples of redux-thunk for async actions.
 `
 
